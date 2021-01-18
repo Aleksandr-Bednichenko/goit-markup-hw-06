@@ -297,7 +297,7 @@ body {
   height: 1px;
   margin: -1px;
   ...;
-}
+ }
 
 .advantages-icon {
   display: flex;
@@ -391,7 +391,7 @@ body {
 
 .activity-block .activity-text {
   display: block;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
@@ -650,6 +650,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: var(--dark-backgraund-color);
+  margin-right: 93px;
 }
 
 .footer-link {
@@ -682,6 +683,87 @@ body {
 .footer-links > .footer-margin:not(:last-child) {
   margin-right: 10px;
 }
+
+.forms-foter{
+  display: flex;
+  flex-direction: row;
+  width: 570px;
+  height: 86px;
+  align-items: flex-end;
+
+  margin-top: 12px;
+
+}
+
+.form-text-foter{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+ 
+}
+
+.input-footer{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  width: 358px;
+  background-color: var(--dark-backgraund-color);
+}
+
+.form-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-right: 12px;
+}
+
+.form-buttom-foter{
+  
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  
+  display:flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  
+  color: var(--white-text-color);
+  
+  padding-top: 10px;
+  padding-right: 28px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+
+  height: 50px;
+
+  background: var(--hover-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+
+
+.icon-send{
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+
 
 /*Портфолио кнопки*/
 
@@ -890,12 +972,154 @@ body {
   min-height: 581px;
   min-width: 521px;
   background-color: var(--white-background-color);
+
+  padding: 40px;
 }
 
 .modal-img {
+  
   position: absolute;
   top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #FFFFFF;
+  
 }
+
+.modal-img>.modal-close{
+  fill: aqua;
+}
+
+.modal-img:hover .modal-close{
+ fill:orange;
+ background-color: palegreen;
+}
+
+.modal-img:focus .modal-close{
+  fill:orange;
+  background-color: palegreen;
+ }
+
+.modal-title{
+  font-weight: 700px;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--black-text-color);
+
+  margin-bottom: 12px;
+}
+
+.form-field{
+  display: flex;
+  flex-direction: column;
+  
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.form-field label{
+  cursor: pointer;
+}
+
+.form-field input{
+  
+  cursor: pointer;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 4px;
+  height: 40px;
+  width: 100%;
+
+  text-indent:30px;
+  
+}
+
+textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 4px;
+  padding-top: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  margin-bottom: 20px;
+  height: 96px;
+  width: 100%;
+  text-indent:0;
+}
+
+.checkbox-modal{
+text-align: center;
+margin-bottom: 30px;
+}
+
+.modal-buttom {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  padding-top: 10px;
+  padding-right: 55px;
+  padding-bottom: 10px;
+  padding-left: 56px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--white-text-color);
+
+  background:#188CE8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition-property:background-color, color ;
+  transition: background-color var(--timing-opacity) var(--timing-function),
+              color var(--timing-opacity) var(--timing-function);
+  cursor: pointer; 
+}
+
+.modal-buttom:hover,
+.modal-buttom:focus{
+  background-color: var(--white-background-color);
+  color: var(--hover-text-color);
+}
+
+.input-icon{
+  position: relative;
+ 
+  width: 100%;
+  height: 40px;
+  
+}
+
+.modal-icon{
+  position: absolute;
+  top: 18px;
+  left: 12px;
+ 
+
+  cursor: pointer;
+}
+
+.form-field:focus .modal-icon {
+  fill:green;
+ background-color: hotpink;
+}
+
+
